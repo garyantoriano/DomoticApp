@@ -44,3 +44,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'rspec', '~> 3.1.0'
+
+group :development do
+	#Permite ver errores mas claros 
+	#gem 'better_errors', '~> 2.0.0'
+end
