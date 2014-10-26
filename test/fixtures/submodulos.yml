@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  submodulo: MyString
+  modelo: MyString
+  pinesDigitales: 1
+  pinesAnalogicos: 1
+  sistema_domotico_id: 
+
+two:
+  submodulo: MyString
+  modelo: MyString
+  pinesDigitales: 1
+  pinesAnalogicos: 1
+  sistema_domotico_id: 

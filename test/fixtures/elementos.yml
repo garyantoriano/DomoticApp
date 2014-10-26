@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  elemento: MyString
+  pinDeConexion: MyString
+  estado: MyString
+  valorDeEstado: MyString
+  ambiente_id: 
+  submodulo_id: 
+
+two:
+  elemento: MyString
+  pinDeConexion: MyString
+  estado: MyString
+  valorDeEstado: MyString
+  ambiente_id: 
+  submodulo_id: 

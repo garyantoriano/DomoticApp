@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Elemento:</strong>
+  <%= @elemento.elemento %>
+</p>
+
+<p>
+  <strong>Pindeconexion:</strong>
+  <%= @elemento.pinDeConexion %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @elemento.estado %>
+</p>
+
+<p>
+  <strong>Valordeestado:</strong>
+  <%= @elemento.valorDeEstado %>
+</p>
+
+<p>
+  <strong>Ambiente:</strong>
+  <%= @elemento.ambiente %>
+</p>
+
+<p>
+  <strong>Submodulo:</strong>
+  <%= @elemento.submodulo %>
+</p>
+
+<%= link_to 'Edit', edit_elemento_path(@elemento) %> |
+<%= link_to 'Back', elementos_path %>

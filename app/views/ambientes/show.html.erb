@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ambiente:</strong>
+  <%= @ambiente.ambiente %>
+</p>
+
+<p>
+  <strong>Sistema domotico:</strong>
+  <%= @ambiente.sistema_domotico %>
+</p>
+
+<%= link_to 'Edit', edit_ambiente_path(@ambiente) %> |
+<%= link_to 'Back', ambientes_path %>

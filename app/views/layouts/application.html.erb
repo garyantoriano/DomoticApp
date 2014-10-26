@@ -7,8 +7,7 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
-<body background="assets/Fondo7.jpg">
-
+<body background="/assets/Fondo7.jpg">
 	<div class="row" style="margin-top:45px;">
 		<div class="col-lg-offset-1 col-lg-10" id="layout_header">
 			<%=render 'layouts/header'%>
@@ -21,7 +20,9 @@
 		</div>
 			
 		<div class="col-lg-7" id="layout_center">
-			<%= yield %>
+			<div class="well">
+				<%= yield %>
+			</div>
 		</div>
 	</div>
 

@@ -1,0 +1,25 @@
+<%= form_for(@ambiente) do |f| %>
+  <% if @ambiente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ambiente.errors.count, "error") %> prohibited this ambiente from being saved:</h2>
+
+      <ul>
+      <% @ambiente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ambiente %><br>
+    <%= f.text_field :ambiente %>
+  </div>
+  <div class="field">
+    <%= f.label :sistema_domotico_id %><br>
+    <%= f.text_field :sistema_domotico_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

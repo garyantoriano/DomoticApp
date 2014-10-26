@@ -1,0 +1,37 @@
+<%= form_for(@submodulo) do |f| %>
+  <% if @submodulo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@submodulo.errors.count, "error") %> prohibited this submodulo from being saved:</h2>
+
+      <ul>
+      <% @submodulo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :submodulo %><br>
+    <%= f.text_field :submodulo %>
+  </div>
+  <div class="field">
+    <%= f.label :modelo %><br>
+    <%= f.text_field :modelo %>
+  </div>
+  <div class="field">
+    <%= f.label :pinesDigitales %><br>
+    <%= f.number_field :pinesDigitales %>
+  </div>
+  <div class="field">
+    <%= f.label :pinesAnalogicos %><br>
+    <%= f.number_field :pinesAnalogicos %>
+  </div>
+  <div class="field">
+    <%= f.label :sistema_domotico_id %><br>
+    <%= f.text_field :sistema_domotico_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

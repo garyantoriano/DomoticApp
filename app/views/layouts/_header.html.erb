@@ -9,14 +9,15 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img style="max-width:50px;" alt="DomoticApp" src="assets/Logotipo.png"> DomoticApp
+        
+        <%=image_tag("Logotipo.png",:alt=>"DomoticApp", :style=>"max-width:50px;") %> DomoticApp
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Registrar Sistema </a></li>
+        <li><%= link_to 'Registrar Sistema', new_sistema_domotico_path %></li>
       </ul>
       <!--
       <form class="navbar-form navbar-left" role="search">

@@ -1,0 +1,35 @@
+<h1>Listing elementos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento</th>
+      <th>Pindeconexion</th>
+      <th>Estado</th>
+      <th>Valordeestado</th>
+      <th>Ambiente</th>
+      <th>Submodulo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @elementos.each do |elemento| %>
+      <tr>
+        <td><%= elemento.elemento %></td>
+        <td><%= elemento.pinDeConexion %></td>
+        <td><%= elemento.estado %></td>
+        <td><%= elemento.valorDeEstado %></td>
+        <td><%= elemento.ambiente %></td>
+        <td><%= elemento.submodulo %></td>
+        <td><%= link_to 'Show', elemento %></td>
+        <td><%= link_to 'Edit', edit_elemento_path(elemento) %></td>
+        <td><%= link_to 'Destroy', elemento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Elemento', new_elemento_path %>
