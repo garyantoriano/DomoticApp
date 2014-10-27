@@ -25,12 +25,13 @@ class AmbientesController < ApplicationController
   # POST /ambientes.json
   def create
     @ambiente = Ambiente.new(ambiente_params)
-
+    puts "OKOKOKOKKOKOKOKOKOKOOKOKOKOKOKOKOKO"+ambiente_params.to_s
     respond_to do |format|
       if @ambiente.save
         format.html { redirect_to @ambiente, notice: 'Ambiente was successfully created.' }
         format.json { render :show, status: :created, location: @ambiente }
       else
+        puts "ERROR ERROR ERROR ERROR ERROR "+ambiente_params.to_s
         format.html { render :new }
         format.json { render json: @ambiente.errors, status: :unprocessable_entity }
       end
@@ -69,6 +70,7 @@ class AmbientesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ambiente_params
-      params.require(:ambiente).permit(:ambiente, :sistema_domotico_id)
+      params.require(:ambiente).permit(:ambiente, :sistema_domotico_id, :plano)
+      #params.require(:ambiente).permit(:ambiente, :sistema_domotico_id, plano: [:plano_file_name, :plano_file_size, :plano_update_at])
     end
 end

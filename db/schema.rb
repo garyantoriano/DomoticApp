@@ -11,13 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141026211204) do
+ActiveRecord::Schema.define(version: 20141027004548) do
 
   create_table "ambientes", force: true do |t|
     t.string   "ambiente"
     t.integer  "sistema_domotico_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "plano_file_name"
+    t.string   "plano_content_type"
+    t.integer  "plano_file_size"
+    t.datetime "plano_updated_at"
   end
 
   add_index "ambientes", ["sistema_domotico_id"], name: "index_ambientes_on_sistema_domotico_id"

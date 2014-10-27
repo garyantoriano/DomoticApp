@@ -50,4 +50,5 @@ group :development do
 	#gem 'better_errors', '~> 2.0.0'
 end
 
-gem 'paperclip-dropbox'
+gem 'paperclip','~> 3.0'
+gem 'paperclip-dropbox', '~> 1.1.7'
