@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-lg-offset-3 col-lg-6">
+  <div class="col-lg-offset-2 col-lg-7">
     <%= form_for(@sistema_domotico, :html=>{:class=>"form-horizontal", :role=>"form"}) do |f| %>
 
     <!--
@@ -16,27 +16,27 @@
       <% end %>
     -->
       <div class="form-group">
-        <%= f.label :nombre, :class=>"control-label col-lg-2" %>
-        <div class=" col-lg-8">
+        <%= f.label :nombre, :class=>"control-label col-lg-3" %>
+        <div class=" col-lg-9">
           <%= f.text_field :nombre, :class=>"form-control", :placeholder=>"Nombre del Sistema Domotico" %>
         </div>
       </div>
       <div class="form-group">
-        <%= f.label :ip, :class=>"control-label col-lg-2" %>
-        <div class=" col-lg-8">
+        <%= f.label :ip, :class=>"control-label col-lg-3" %>
+        <div class=" col-lg-9">
           <%= f.text_field :ip, :class=>"form-control", :placeholder=>"Direccion IP" %>
         </div>
       </div>
       <!--
       <div class="form-group">
-        <%= f.label :estado, :class=>"control-label col-lg-2" %><br>
+        <%= f.label :estado, :class=>"control-label col-lg-3" %><br>
         <div class=" col-lg-8">
-          <%= f.text_field :estado, :class=>"form-control", :placeholder=>"Nombre del Sistema Domotico" %>
+          <%= f.text_field :estado, :class=>"form-control", :placeholder=>"Estado" %>
           </div>
       </div>
       -->
       <div class="form-group">
-        <div class="col-lg-offset-2 col-lg-2">
+        <div class="col-lg-offset-3 col-lg-2">
           <%= f.submit :class=>"btn btn-primary" %>
         </div>
       </div>
